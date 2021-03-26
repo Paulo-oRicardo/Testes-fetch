@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.imgFe {
+  background-image: url("../img/bg-map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+h1 a {
+  text-decoration: none;
+  color: black;
+  margin-left: 3rem;
+  font-size: 3rem;
+}
+h1 strong,
+h2 strong {
+  color: #28b5a9;
+}
+h2 img {
+  width: 80px;
+}
+nav {
+  width: 20%;
+  margin-right: 2rem;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: black;
+}
+li a:hover {
+  border-bottom: 5px solid #28b5a9;
+}
+
+.cep {
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #000;
+}
+.cep h2 {
+  font-size: 3rem;
+  padding-bottom: 1.5rem;
+}
+.cep label {
+  font-size: 1.3rem;
+}
+.cep input[type="text"] {
+  width: 15rem;
+  margin: 0 6px;
+  padding: 0 0.8rem;
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 3px;
+  outline: 0;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: transparent;
+}
+.cep input[type="button"] {
+  padding: 0.3rem 1.6rem;
+  background-color: #000;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  outline: 0;
+}
+.resultsCep {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2.5rem;
+  margin-right: 10px;
+}
+.resultsCep p {
+  width: 95%;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  padding: 10px 5px;
+  border-bottom: 1px solid #000;
+  border-radius: 5px;
+  font-weight: 400;
+}
+.bit {
+  background-color: rgba(94, 94, 94, 0.089);
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+  border-bottom: 1px solid #000;
+}
+.bit h2 {
+  text-align: center;
+  font-size: 3.8rem;
+}
+.imgCN {
+  width: 130px;
+}
+.divBit {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.divBit h4 {
+  font-size: 1.5rem;
+  margin: 1.8rem 0 0.5rem 0;
+}
+.divBit button {
+  width: 30%;
+  margin: 0.5rem;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  background-color: transparent;
+  box-shadow: 5px 5px 5px #ccc;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.imgBit {
+  width: 150px;
+}
+.piada {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.piada h2 {
+  text-align: center;
+  font-size: 3.8rem;
+}
+.divPiada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+.divPiada p {
+  width: 60%;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.divPiada label {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+.divPiada button {
+  padding: 5px 50px;
+  font-size: 1rem;
+  margin-top: 3rem;
+  outline: 0;
+  background-color: white;
+  box-shadow: 5px 5px 5px #ccc;
+  cursor: pointer;
+  border-radius: 8px;
+}
+/* animation section */
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.3s;
+}
+
+.js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(-0, 0, 0);
+}
+
+@media screen and (max-width: 500px) {
+  h1 a {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+  ul {
+    margin-right: 20rem;
+  }
+  li a {
+    font-size: 1.2rem;
+    padding: 0 5px;
+  }
+  .cep h2 {
+    font-size: 2rem;
+  }
+}

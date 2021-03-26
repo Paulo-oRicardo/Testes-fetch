@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style/style.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+   <title>Tem Aqui</title>
+</head>
+<body>
+   <section class="imgFe">
+   <header>
+      <h1><a href="">Tem <strong>Aqui</strong></a> </h1>
+      <nav class="js-menu">
+         <ul>
+            <li><a href="#cep">Cep</a></li>
+            <li><a href="#bit">BitCoin</a></li>
+            <li><a href="#piada">Piada</a></li>
+         </ul>
+      </nav>
+   </header>
+   <section id="cep" class="cep js-scroll" >
+      <h2>Confira seu <strong>CEP</strong> <img src="./img/point-map.png" alt=""></h2>
+     
+      <div>
+         <label for="inputCep">Insira um cep: </label>
+         <input type="text" name='inputCep'  class="inputCep" [data-input-cep] maxlength="8" onKeyPress="if(this.value.length==8) return false;" placeholder="12345678"required>
+         <input type="button" value="Buscar" class="btnCep" [data-btn-cep]>
+      </div>
+      <div class="resultsCep" [data-resultsCep] >
+      </div>
+   </section>
+</section>
+
+   <section id="bit"class="bit js-scroll">
+      <h2>Valor <strong>BitCoin</strong><img class="imgBit" src="./img/bitCoin.png" alt=""></h2>
+      <div class="divBit">
+         <h4>Saiba o valor em diferentes moedas</h4>
+         <button name="dol" id="btnDolar">Dólar</button>
+         <label for="dol" id="lbDolar"></label>
+
+         <button name="real" id="btnReal">Real</button>
+         <label for="real" id="lbReal"></label>
+
+         <button name="euro" id="btnEuro">Euro</button>
+         <label for="euro" id="lbEuro"></label>
+
+         <button name="iene" id="btnIene">Iene</button>
+         <label for="iene" id="lbIene"></label>
+      </div>
+   </section>
+   <section id="piada" class="piada js-scroll">
+      <h2>Piadas do <strong>Chuck   Norris</strong><img class="imgCN" src="./img/CN.png" alt=""></h2>
+      <div class="divPiada">
+         <label for="joke">Click para uma piada do Chuck Norris</label>
+         <p id="pPiada"></p>
+         <button id="btnPiada" name="joke">Piada</button>
+      </div>
+   </section>
+   <script type="module" src="./js/helpers/script.js"></script>
+   <script src="./js/Controller/ControllerCep.js"></script>
+   <script src="./js/model/ModelCep.js"></script>
+   <script src="./js/View/ViewCep.js"></script>
+</body>
+</html>
